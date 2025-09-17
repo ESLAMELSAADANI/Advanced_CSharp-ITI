@@ -1,0 +1,8 @@
+1 - Make (Odd - Even - Fib) classes with GetCount() method
+    Make SeriesEngine Class contain method take parameter of series type.
+
+2-Sort Array of employee -> IComparable
+
+3- Search for IComparer -> To Add new compare behavior
+
+4- Make Generic swap() and use constraints.
