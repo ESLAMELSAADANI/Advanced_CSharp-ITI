@@ -121,11 +121,24 @@ namespace Day03._01_MyList_Task
                 Console.WriteLine($"Not Found This Value -> {value}!");
         }
 
+        public MyList<T> Find(Predicate<T> predicate)
+        {
+            if (Length <= 0)
+                return new MyList<T>();
+            MyList<T> newMyList = new MyList<T>();
+            for (int i = 0; i <= top; i++)
+            {
+                if (predicate.Invoke(arr[i]))
+                    newMyList.Add(arr[i]);
+            }
+            return newMyList;
+        }
+
         public void Print()
         {
-            foreach (var item in arr)
+            for (int i = 0; i <= top; i++)
             {
-                Console.Write($"{item} ");
+                Console.Write($"{arr[i]} ");
             }
         }
     }

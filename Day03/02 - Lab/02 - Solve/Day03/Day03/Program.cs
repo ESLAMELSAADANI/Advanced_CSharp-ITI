@@ -2,11 +2,35 @@
 //using Day03._02___BuiltInList_Task;
 using Day03._02___BuiltInList_Task;
 using Day03._03___HashSet_Task;
+using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography.X509Certificates;
 using System.Xml.Linq;
 namespace Day03
 {
     internal class Program
     {
+        public delegate t3 MyDel<in t1, in t2, out t3>(t1 x, t2 y);
+
+        public static int Add(int x, int y)
+        {
+            Console.Write("Add Function! ");
+            return x + y;
+        }
+        public static int Sub(int x, int y)
+        {
+            Console.Write("Sub Function! ");
+            return x - y;
+        }
+        public static int Mul(int x, int y)
+        {
+            Console.Write("Mul Function! ");
+            return x * y;
+        }
+        public static int Mod(int x, int y)
+        {
+            Console.Write("Mod Function! ");
+            return x % y;
+        }
         static void Main(string[] args)
         {
 
@@ -160,14 +184,63 @@ namespace Day03
 
             #endregion
 
-            #endregion 
+            #endregion
 
             #endregion
 
+            #region 04 - Delegate Task
 
+            #region 01 - User Defined
 
+            //MyDel<int, int, int> myDel1 = Add;
+            //Console.WriteLine(myDel1.Invoke(5, 6));//Add Function! 11
 
+            //myDel1 += Sub;
+            //Console.WriteLine(myDel1.Invoke(5, 6));//Add Function! Sub Function! -1
 
+            //myDel1 += Mul;
+            //myDel1 += Mod;
+            //Console.WriteLine(myDel1.Invoke(6, 4));//Add Function! Sub Function! Mul Function! Mod Function! Add Function! 10
+
+            //myDel1 -= Mod;
+            //Console.WriteLine(myDel1?.Invoke(6, 4));//Add Function! Sub Function! Mul Function! 24 
+
+            #endregion
+
+            #region 02 - Built-In
+
+            //Func<int, int, int> func = new Func<int, int, int>(Add);
+            //Console.WriteLine(func.Invoke(10, 20));//Add Function! 30
+
+            //func += Sub;
+            //func += Mul;
+            //func += Mod;
+
+            //Console.WriteLine(func.Invoke(10, 20));// Add Function!Sub Function! Mul Function!Mod Function! 10 
+
+            #endregion
+
+            #endregion
+
+            #region 05 - Find(Predicate p) Task
+            
+            //MyList<int> myList = new MyList<int>();
+            //myList.Add(1);
+            //myList.Add(2);
+            //myList.Add(3);
+            //myList.Add(4);
+            //myList.Add(5);
+            //myList.Add(6);
+            //myList.Add(7);
+            //myList.Add(8);
+            //myList.Add(9);
+            //myList.Add(10);
+
+            //MyList<int> newList = myList.Find((x) => x % 2 == 0);
+
+            //newList.Print();//2 4 6 8 10 
+
+            #endregion
 
         }
     }
