@@ -16,7 +16,7 @@ namespace Day03._01_MyList_Task
 
         //Properties
         public int Capacity { get => capacity; }
-        public int length { get => top + 1; }
+        public int Length { get => top + 1; }
 
         //Indexer
         public T this[int index]
@@ -57,6 +57,12 @@ namespace Day03._01_MyList_Task
             arr = new T[cap];
             top = -1;
         }
+        public MyList()
+        {
+            capacity = 4;
+            arr = new T[4];
+            top = -1;
+        }
 
         //Methods
         public void Add(T value)
@@ -70,7 +76,7 @@ namespace Day03._01_MyList_Task
             {
                 capacity *= 2;
                 T[] temp = new T[capacity];
-                for (int i = 0; i < arr.Length; i++)
+                for (int i = 0; i < Length; i++)
                 {
                     temp[i] = arr[i];
                 }
@@ -84,7 +90,7 @@ namespace Day03._01_MyList_Task
 
         public void Remove(T value)
         {
-            if (length == 0)
+            if (Length == 0)
             {
                 Console.WriteLine("Array Is Empty!");
                 return;
