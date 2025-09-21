@@ -98,22 +98,34 @@ namespace Day03._01_MyList_Task
             bool valueFound = false;
             for (int i = 0; i < top; i++)
             {
+                //if (value.CompareTo(arr[i]) == 0)
+                //{
+                //    valueFound = true;
+                //    arr[i] = arr[i + 1];
+                //    for (int j = i + 1; j < top; j++)
+                //    {
+                //        arr[j] = arr[j + 1];
+                //    }
+                //    capacity--;
+                //    top--;
+                //    T[] newArr = new T[capacity];
+                //    for (int k = 0; k <= top; k++)
+                //    {
+                //        newArr[k] = arr[k];
+                //    }
+                //    arr = newArr;
+                //    break;
+                //}
                 if (value.CompareTo(arr[i]) == 0)
                 {
                     valueFound = true;
-                    arr[i] = arr[i + 1];
-                    for (int j = i + 1; j < top; j++)
+                    //arr[i] = arr[i + 1];
+                    for (int j = i; j < top; j++)
                     {
                         arr[j] = arr[j + 1];
                     }
                     capacity--;
                     top--;
-                    T[] newArr = new T[capacity];
-                    for (int k = 0; k <= top; k++)
-                    {
-                        newArr[k] = arr[k];
-                    }
-                    arr = newArr;
                     break;
                 }
             }
