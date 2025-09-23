@@ -8,7 +8,7 @@ namespace Day04._01___Find___List_Extension_Method
 {
     internal static class ListExtension
     {
-        public static List<string> Find(this List<string> strs, Predicate<string> predicate)
+        public static List<string> MyFind(this List<string> strs, Predicate<string> predicate)
         {
             List<string> newList = new List<string>();
             foreach (var item in strs)
