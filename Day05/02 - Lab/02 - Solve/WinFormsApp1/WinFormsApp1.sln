@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginFormTask", "LoginFormTask\LoginFormTask.csproj", "{7C7EEA47-71B6-434F-9AE5-CA834339DA7A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListStudents", "ListStudents\ListStudents.csproj", "{C7E110E6-9530-4C7A-833E-028EBAB8A4AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7C7EEA47-71B6-434F-9AE5-CA834339DA7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C7EEA47-71B6-434F-9AE5-CA834339DA7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C7EEA47-71B6-434F-9AE5-CA834339DA7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7E110E6-9530-4C7A-833E-028EBAB8A4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E110E6-9530-4C7A-833E-028EBAB8A4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E110E6-9530-4C7A-833E-028EBAB8A4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E110E6-9530-4C7A-833E-028EBAB8A4AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

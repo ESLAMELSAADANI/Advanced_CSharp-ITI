@@ -11,8 +11,18 @@ namespace LoginFormTask
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            MessageBox.Show($"Name: {textName.Text}\nAge: {textAge.Text}\nEmail: {textEmail.Text}");
+            User user = new User()
+            {
+                Name = textName.Text,
+                Age = int.Parse(textAge.Text),
+                Email = textEmail.Text
+            };
+            MessageBox.Show(user.ToString());
         }
 
+        private void btnTask2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

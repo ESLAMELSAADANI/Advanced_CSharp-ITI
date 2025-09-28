@@ -35,6 +35,7 @@
             textAge = new TextBox();
             textEmail = new TextBox();
             btnLogin = new Button();
+            btnTask2 = new Button();
             SuspendLayout();
             // 
             // lblName
@@ -45,7 +46,6 @@
             lblName.Size = new Size(49, 20);
             lblName.TabIndex = 0;
             lblName.Text = "Name";
-            //lblName.Click += label1_Click;
             // 
             // lblAge
             // 
@@ -55,7 +55,6 @@
             lblAge.Size = new Size(36, 20);
             lblAge.TabIndex = 1;
             lblAge.Text = "Age";
-            //lblAge.Click += label1_Click_1;
             // 
             // lblEmail
             // 
@@ -97,11 +96,22 @@
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
             // 
+            // btnTask2
+            // 
+            btnTask2.Location = new Point(21, 237);
+            btnTask2.Name = "btnTask2";
+            btnTask2.Size = new Size(138, 29);
+            btnTask2.TabIndex = 4;
+            btnTask2.Text = "ListStudent Task";
+            btnTask2.UseVisualStyleBackColor = true;
+            btnTask2.Click += btnTask2_Click;
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnTask2);
             Controls.Add(btnLogin);
             Controls.Add(textEmail);
             Controls.Add(textAge);
@@ -124,5 +134,6 @@
         private TextBox textAge;
         private TextBox textEmail;
         private Button btnLogin;
+        private Button btnTask2;
     }
 }
