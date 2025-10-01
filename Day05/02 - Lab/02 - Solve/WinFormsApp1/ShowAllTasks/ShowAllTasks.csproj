@@ -9,7 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BallTask\BallTask.csproj" />
+    <ProjectReference Include="..\DrawTask\DrawTask.csproj" />
     <ProjectReference Include="..\ListStudents\ListStudents.csproj" />
+    <ProjectReference Include="..\LoginFormTask\LoginFormTask.csproj" />
   </ItemGroup>
 
 </Project>

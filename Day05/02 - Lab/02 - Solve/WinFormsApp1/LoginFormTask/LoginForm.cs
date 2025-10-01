@@ -1,3 +1,4 @@
+using ListStudents;
 using System.Xml.Linq;
 
 namespace LoginFormTask
@@ -18,11 +19,6 @@ namespace LoginFormTask
                 Email = textEmail.Text
             };
             MessageBox.Show(user.ToString());
-        }
-
-        private void btnTask2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

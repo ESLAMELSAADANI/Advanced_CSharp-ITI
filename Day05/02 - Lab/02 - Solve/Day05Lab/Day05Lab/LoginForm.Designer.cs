@@ -1,14 +1,14 @@
-﻿namespace LoginFormTask
+﻿namespace Day05Lab
 {
     partial class frmLogin
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,24 +23,24 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             lblName = new Label();
             lblAge = new Label();
             lblEmail = new Label();
-            textName = new TextBox();
-            textAge = new TextBox();
-            textEmail = new TextBox();
+            txtName = new TextBox();
+            txtAge = new TextBox();
+            txtEmail = new TextBox();
             btnLogin = new Button();
             SuspendLayout();
             // 
             // lblName
             // 
             lblName.AutoSize = true;
-            lblName.Location = new Point(179, 46);
+            lblName.Location = new Point(174, 77);
             lblName.Name = "lblName";
             lblName.Size = new Size(49, 20);
             lblName.TabIndex = 0;
@@ -49,48 +49,48 @@
             // lblAge
             // 
             lblAge.AutoSize = true;
-            lblAge.Location = new Point(179, 78);
+            lblAge.Location = new Point(174, 119);
             lblAge.Name = "lblAge";
             lblAge.Size = new Size(36, 20);
-            lblAge.TabIndex = 1;
+            lblAge.TabIndex = 0;
             lblAge.Text = "Age";
             // 
             // lblEmail
             // 
             lblEmail.AutoSize = true;
-            lblEmail.Location = new Point(179, 114);
+            lblEmail.Location = new Point(174, 163);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(46, 20);
-            lblEmail.TabIndex = 1;
+            lblEmail.TabIndex = 0;
             lblEmail.Text = "Email";
             // 
-            // textName
+            // txtName
             // 
-            textName.Location = new Point(234, 43);
-            textName.Name = "textName";
-            textName.Size = new Size(125, 27);
-            textName.TabIndex = 2;
+            txtName.Location = new Point(229, 74);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(125, 27);
+            txtName.TabIndex = 1;
             // 
-            // textAge
+            // txtAge
             // 
-            textAge.Location = new Point(234, 78);
-            textAge.Name = "textAge";
-            textAge.Size = new Size(125, 27);
-            textAge.TabIndex = 2;
+            txtAge.Location = new Point(229, 116);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new Size(125, 27);
+            txtAge.TabIndex = 1;
             // 
-            // textEmail
+            // txtEmail
             // 
-            textEmail.Location = new Point(234, 111);
-            textEmail.Name = "textEmail";
-            textEmail.Size = new Size(125, 27);
-            textEmail.TabIndex = 2;
+            txtEmail.Location = new Point(229, 160);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(125, 27);
+            txtEmail.TabIndex = 1;
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(244, 167);
+            btnLogin.Location = new Point(245, 205);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(94, 29);
-            btnLogin.TabIndex = 3;
+            btnLogin.TabIndex = 2;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
@@ -101,9 +101,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnLogin);
-            Controls.Add(textEmail);
-            Controls.Add(textAge);
-            Controls.Add(textName);
+            Controls.Add(txtEmail);
+            Controls.Add(txtAge);
+            Controls.Add(txtName);
             Controls.Add(lblEmail);
             Controls.Add(lblAge);
             Controls.Add(lblName);
@@ -118,9 +118,9 @@
         private Label lblName;
         private Label lblAge;
         private Label lblEmail;
-        private TextBox textName;
-        private TextBox textAge;
-        private TextBox textEmail;
+        private TextBox txtName;
+        private TextBox txtAge;
+        private TextBox txtEmail;
         private Button btnLogin;
     }
 }
